@@ -9,7 +9,7 @@ const constants = require('./webpack.constants.js')
 
 module.exports = {
     entry: {
-        bundle: './src/scripts/index.js',
+        bundle: ['./src/scripts/index.js', './src/styles/base.scss'],
     },
     output: {
         filename: '[name].[hash].js',
