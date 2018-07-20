@@ -20,13 +20,16 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        cacheDirectory: true,
-                    }
-                }
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['@babel/preset-env'],
+                            cacheDirectory: true,
+                        }
+                    },
+                    'eslint-loader',
+                ]
             },
             {
                 test: /\.(sa|sc|c)ss$/,

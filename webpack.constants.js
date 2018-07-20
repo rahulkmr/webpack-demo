@@ -7,7 +7,7 @@ module.exports = {
         importLoaders: 2,
       }
     },
-    'postcss-loader',
     'sass-loader',
+    'postcss-loader',
   ]
 }
