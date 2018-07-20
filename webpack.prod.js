@@ -18,8 +18,8 @@ module.exports = merge.smart(common, {
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[hash].css',
-            chunkFilename: '[id].[hash].css',
+            filename: '[name].[chunkhash].css',
+            chunkFilename: '[name]_[id].[hash].css',
         }),
     ],
     module: {
