@@ -33,13 +33,7 @@ module.exports = merge.smart(common, {
     optimization: {
         runtimeChunk: 'single',
         splitChunks:{
-            cacheGroups:{
-                vendor: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    chunks: 'all',
-                }
-            }
+            chunks: 'all',
         },
         minimizer: [
             new UglifyJsPlugin({}),
