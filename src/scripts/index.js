@@ -1,9 +1,9 @@
-import printMe from './print.js'
-import {cube} from './math.js'
+import printMe from './print'
+import { cube } from './math'
 
 function component() {
-    var element = document.createElement('pre');
-    var btn = document.createElement('button')
+    let element = document.createElement('pre')
+    let btn = document.createElement('button')
 
     element.innerHTML = ['Hi webpack', '5 cubed is ' + cube(5)].join('\n\n')
     element.classList.add('hello')
@@ -16,4 +16,4 @@ function component() {
     return element;
 }
 
-document.body.appendChild(component());
+document.body.appendChild(component())
